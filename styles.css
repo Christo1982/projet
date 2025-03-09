@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.reservation-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.reservation-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+}
+
+.reservation-info {
+    flex-grow: 1;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.edit-button, .delete-button {
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.edit-button {
+    background-color: #2196F3;
+}
+
+.delete-button {
+    background-color: #f44336;
+}
+
+.status-message {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333;
+        color: #f5f5f5;
+    }
+    
+    .container {
+        background-color: #444;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    input, select {
+        background-color: #555;
+        color: #f5f5f5;
+        border: 1px solid #666;
+    }
+    
+    .reservation-item {
+        border-bottom: 1px solid #555;
+    }
+    
+    .success {
+        background-color: #1e4620;
+        color: #d4edda;
+    }
+    
+    .error {
+        background-color: #511e22;
+        color: #f8d7da;
+    }
+}
